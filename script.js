@@ -1,31 +1,31 @@
-// 1. Dichiarazione di variabili
-// Crea una variabile chiamata name e assegnale il tuo nome.
-// Stampa il valore di nome nella console.
-let name = 'Michele';
-console.log(name);
+const city = 'New York'; // NON MODIFICARE QUESTA RIGA
+const cityName = 'City'; // NON MODIFICARE QUESTA RIGA
+const shoppingList = 'mele, banane, arance, uva'; // NON MODIFICARE QUESTA RIGA
+const hello = 'hello'; // NON MODIFICARE QUESTA RIGA
 
-// 2. Tipi primitivi
-// Crea tre variabili chiamate number, text e bool e assegna rispettivamente
-// un numero, una stringa e un valore booleano.
-// Stampa tutti i valori nella console.
-let number = 42;
-let text = 'Hello, world!';
-let bool = true;
-console.log(number);
-console.log(text);
-console.log(bool);
+// 1. Cerca un carattere in una stringa
+// Stampa l'INDICE con cui viene trovato
+// il carattere Y nella variabile city
+const cityIndex = city.indexOf('Y');
+console.log(cityIndex); // Output: 4
 
-// 3. Sostituisci null nelle righe sottostanti utilizzando operazioni con le stringhe
-// e le variabili sopra in modo da stampare correttamente 
-// in console la stringa con il nome completo
-const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'; // NON MODIFICARE QUESTA RIGA
-const firstName = 'Jane'; // NON MODIFICARE QUESTA RIGA
-const lastName = 'Smith'; // NON MODIFICARE QUESTA RIGA
+// 2. Sottostringhe 
+// Stampa la sottostringa "York" dalla variabile city
+const citySubstring = city.substring(4, 8);
+console.log(citySubstring); // Output: "York"
 
-const fullName = "Jane Smith";
-console.log(fullName); // Output: "Jane Smith"
+// 3. Sostituzione
+// Sostituisci 'York' con 'Delhi'substring
+const cityReplaced = city.replace('York', 'Delhi');
+console.log(cityReplaced); // Output:  "New Delhi"
 
-// 4. Imposta questa variabile utilizzando una proprietà
-// sulla variabile alphabet per ottenere la sua lunghezza
-const numberOfLettersInAlphabet = alphabet.length;
-console.log(numberOfLettersInAlphabet); // Output: 26
+// 4. Template literal
+// Concatena due stringhe usando la sintassi `${var}`
+// e rendi cityNameConcat uguale a 'New York City'
+const cityNameConcat = `${city}  ${cityName}`;
+console.log(cityNameConcat); // Output: "New York City"
+
+// 5. Tutto in maiscolo
+// Trasforma tutto in maiscuolo la stringa della variabile hello
+const upperCaseHello = hello.toUpperCase();
+console.log(upperCaseHello); // Output: "HELLO"
